@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --primaryColor: #FFFFFF;
     --secondaryColor: #6100C1;
@@ -49,7 +50,7 @@ header {
 /* navbar */
 .navbar .navbar-brand {
     color: var(--primaryColor);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar .navbar-brand img {
@@ -63,12 +64,13 @@ header {
 .navbar ul li a:hover {
     color: var(--primaryColor);
     border-bottom: 3px solid var(--primaryColor);
+    width: 60%;
     
 }
-
 .nav-item .active {
     color: var(--primaryColor);
     border-bottom: 3px solid var(--primaryColor);
+    width: 40%;
     transition: all;
     transition-duration: 300ms;
 }
@@ -77,12 +79,20 @@ header {
 /* hero */
 #hero {
     background-color: var(--secondaryColor);
-    
     padding: 50px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     color: var(--primaryColor);
+}
+
+.hero-left h1 {
+    font-weight: bold;
+}
+
+.hero-left button {
+    margin-top: 5rem;
+    padding: 0 0;
 }
 .hero-right img{
     width: 95%;
