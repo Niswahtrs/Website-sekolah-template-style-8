@@ -59,20 +59,35 @@ header {
 
 .navbar ul li a {
     color: #AAAAAA;
+    position: relative;
+}
+
+.nav-item .nav-link.active {
+    color: var(--primaryColor);
+}
+  
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    color: var(--primaryColor);
+    transform: translateX(-50%);
+    width: 30%; 
+    border-bottom: 3px solid var(--primaryColor);
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li a.active::after
+{
+    opacity: 1;
 }
 
 .navbar ul li a:hover {
     color: var(--primaryColor);
-    border-bottom: 3px solid var(--primaryColor);
-    width: 60%;
-    
-}
-.nav-item .active {
-    color: var(--primaryColor);
-    border-bottom: 3px solid var(--primaryColor);
-    width: 40%;
-    transition: all;
-    transition-duration: 300ms;
 }
 
 
