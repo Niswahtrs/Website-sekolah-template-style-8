@@ -26,7 +26,6 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-
 /* button */
 button a{
     background-color: var(--thirdColor);
@@ -108,10 +107,6 @@ header {
     font-weight: bold;
 }
 
-.hero-left {
-    top: 20px;
-}
-
 .hero-left button {
     margin-top: 5rem;
     padding: 0 0;
@@ -149,19 +144,103 @@ header {
 
 /* kontak */
 #kontak {
+    width: auto;
     height: 620px;
-    padding: 25px 100px;
+    padding: 100px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    color: var(--primaryColor);
     position: relative;
+}
+
+.kontak-left {
+    transform: translateY(-15%);
 }
 
 .kontak-left h1 {
     color: #404040;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 10px;
 }
 
 .kontak-left p {
     color: #949494;
+}
+
+.kontak-right {
+    left: 10%;
+    transform: translateX(10%);
+}
+
+.kontak-item-detail1 p{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.kontak-item button {
+    margin-top: 4rem;
+    padding: 0 0;
+}
+
+.kontak-item h4{
+    color: #0F0F0F ;
+    font-weight: 500;
+}
+
+.kontak-item p{
+    color: #949494 ;
+}
+
+/* footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+}
+
+footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr ;
+    grid-gap: 5px;
+}
+
+footer .container .sec h5{
+    position: relative;
+    color: #4B4B4B;
+    font-weight: 600;
+}
+
+footer .container .sec p {
+    color: #787879;
+    margin-top: 20px;
+}
+
+footer .container .sec li {
+    list-style: none;
+}
+
+footer .container .icon svg{
+    color: var(--thirdColor);
+    margin-top: 10px;
+}
+
+footer .container .icon svg a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: var(--thirdColor);
+    border-radius: 100%;
+    display: grid;
+    align-content: center;
+}
+
+.copyright {
+    width: 100%;
+    padding: 20px 100px;
+    text-align: center;
+    color: #4B4B4B;
+    border-top: 1px solid #AAAAAA;
 }
