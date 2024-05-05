@@ -48,6 +48,7 @@ header {
 }
 
 /* navbar */
+
 .navbar .navbar-brand {
     color: var(--primaryColor);
     font-weight: 600;
@@ -94,21 +95,73 @@ header {
 /* hero */
 #hero {
     background-color: var(--secondaryColor);
-    padding: 50px 100px;
+    height: 620px;
+    padding: 25px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     color: var(--primaryColor);
+    position: relative;
 }
 
 .hero-left h1 {
     font-weight: bold;
 }
 
+.hero-left {
+    top: 20px;
+}
+
 .hero-left button {
     margin-top: 5rem;
     padding: 0 0;
 }
+
+.hero-right {
+    position: relative;
+}
+
 .hero-right img{
     width: 95%;
+}
+
+.image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.hero-right .img1{
+    width: 95%;
+    z-index: 1;
+    bottom: 0;
+    left: 5%;
+    transform: translateY(40%);
+}
+
+.hero-right .img2{
+    width: 85%;
+    z-index: 2;
+    bottom: 0;
+    left: 10%;
+    transform: translateY(50%);
+}
+
+
+/* kontak */
+#kontak {
+    height: 620px;
+    padding: 25px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: var(--primaryColor);
+    position: relative;
+}
+
+.kontak-left h1 {
+    color: #404040;
+}
+
+.kontak-left p {
+    color: #949494;
 }
