@@ -108,7 +108,7 @@ header {
 }
 
 .hero-left button {
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 0 0;
 }
 
@@ -139,6 +139,52 @@ header {
     bottom: 0;
     left: 10%;
     transform: translateY(50%);
+}
+
+/* keunggulan beranda*/
+#card-keunggulan {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 25px 100px;
+    z-index: 3;
+    transform: translateY(-100px);
+    font-size: 15px;
+}
+
+.container-beranda{
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+    grid-gap: 100px;
+    box-shadow: 0 .5px 10px rgba(181, 177, 177, 0.4);
+}
+
+.card-detail {
+    align-items: center;
+    text-align: center;
+}
+
+.card-detail p {
+    color: #606060;
+    padding-top: 20px;
+}
+
+.card-detail .card-icon {
+    background-color: var(--IconColor1);
+    width: fit-content;
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.card-detail .card-icon img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
 }
 
 
