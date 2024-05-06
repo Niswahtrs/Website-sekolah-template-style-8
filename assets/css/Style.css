@@ -130,7 +130,7 @@ header {
     z-index: 1;
     bottom: 0;
     left: 5%;
-    transform: translateY(30%);
+    transform: translateY(40%);
 }
 
 .hero-right .img2{
@@ -138,7 +138,7 @@ header {
     z-index: 2;
     bottom: 0;
     left: 10%;
-    transform: translateY(40%);
+    transform: translateY(50%);
 }
 
 /* keunggulan beranda*/
