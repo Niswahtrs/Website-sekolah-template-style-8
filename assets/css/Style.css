@@ -487,9 +487,7 @@ button a:hover{
     color: var(--thirdColor);
 }
 
-.card-infor {
-    display: flex;
-    gap: 20px;
+.card-infor .card {
     border: none;
 }
 
