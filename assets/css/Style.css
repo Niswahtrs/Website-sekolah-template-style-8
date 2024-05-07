@@ -84,7 +84,7 @@ button a:hover{
 
 
 /* navbar */
-nav {
+.navbar {
     background-color: var(--secondaryColor);
     color: var(--primaryColor);
     padding: 1.5rem 3rem;
@@ -596,6 +596,144 @@ video {
 
 .logo-partner-2 img {
     width: 50px;
+}
+
+/* berita */
+#news {
+    padding: 25px 100px;
+    margin: 50px;
+}
+
+.container-news h1 {
+    color: 404040;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.container-news img {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container-news h2 {
+    color: #404040;
+}
+
+.body-text p{
+    color: #787878;
+    text-align: justify;
+}
+
+.body-text p a{
+    color: var(--thirdColor);
+    text-decoration: none;
+}
+
+/* nav-card */
+#nav-card{
+    padding: 25px 100px;
+}
+
+#nav-card .card{
+    border: none;
+}
+
+/* isi berita */
+#detail-berita {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+}
+
+#detail-berita h2 {
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+#detail-berita img {
+    padding: 0;
+    width: 100%;
+    transform: translateY(20%);
+}
+
+/* keterangan */
+#keterangan {
+    padding: 50px 100px;
+    text-align: justify;
+}
+
+/* bagikan */
+#bagi {
+    padding: 0px 100px;
+}
+#bagi h5 {
+    color: #8B8B8B;
+    font-weight: 300;
+}
+
+.icon-bagi a {
+    text-decoration: none;
+}
+.icon-bagi a svg {
+    fill: var(--thirdColor);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon-bagi a svg:hover{
+    fill: var(--primaryColor);
+    background: var(--thirdColor);
+    border-radius: 100%;
+}
+
+
+/* artikel lainnya */
+#artikel {
+    padding: 50px 100px;
+}
+
+/* galeri */
+#kegiatan-2 {
+    padding: 30px 90px;
+}
+
+.container-kegiatan h1 {
+    text-align: center;
+    padding: 50px;
+    color: #404040;
+}
+
+#kegiatan-2 .card-text {
+    color: #787878;
+}
+
+.card-galeri .card{
+    border: none;
+}
+
+/* halaman */
+#halaman {
+    padding: 25px 100px;
+    color: #787878;
+}
+
+#halaman .row {
+    align-items: center;
+    
+}
+
+.pagination li {
+    border: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.page-item a{
+    color: #787878;
+}
+
+.page-item .page-link.active {
+    color: var(--thirdColor);
+    background-color: var(--primaryColor);
 }
 
 
