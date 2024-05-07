@@ -46,6 +46,43 @@ button a:hover{
     gap: 2rem;
 }
 
+.bg {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  
+  .info-kontak {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: var(--primaryColor);
+  }
+  
+  
+  .title-text {
+      color: var(--primaryColor);
+  }
+
+  .kumpulan-kegiatan a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+
 /* navbar */
 nav {
     background-color: var(--secondaryColor);
@@ -256,6 +293,25 @@ nav {
     border-radius: 100%;
 }
 
+/* tentang : civitas */
+#civitas {
+    padding: 30px 100px;
+}
+
+#civitas .container h1 {
+    text-align: center;
+    padding: 50px;
+    color: #404040;
+}
+
+#civitas .card-text {
+    color: #787878;
+}
+
+.card-civitas .card{
+    border: none;
+}
+
 /* partner kerja sama */
 #partner {
     position: relative;
@@ -310,6 +366,10 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+.title-text h1 {
+    color: var(--primaryColor);
+}
 .card-kegiatan {
     border-radius: 100%;
 }
@@ -317,12 +377,18 @@ nav {
     justify-content: space-between;
 }
 
-.card-title {
+.card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#kegiatan .card-title {
     background-color: #6804CB;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+
 }
 
 .card-title p {
@@ -382,13 +448,19 @@ nav {
     position: relative;
     text-align: center;
     padding: 50px;
+    z-index: 2;
+}
+
+.bg img{
+    width: 100%;
+    z-index: 1;
 }
 
 .info-kontak p{
     text-align: center;
-    background-image: url(bg2.svg);
     font-size: 25px;
     font-weight: 600;
+    color: var(--primaryColor);
 }
 
 .info-kontak .btn a {
@@ -400,19 +472,41 @@ nav {
     padding: 25px 100px;
 }
 
-.info {
+.infor {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.info h1 {
+.infor h1 {
     color: #404040;
 }
 
-.info p {
+.infor p {
     color: var(--thirdColor);
+}
+
+.card-infor {
+    display: flex;
+    gap: 20px;
+    border: none;
+}
+
+.info-tags {
+    font-size: 12px;
+    color: var(--primaryColor);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.pengumuman{
+    background-color: #732F9D;
+}
+
+.berita {
+    background-color: #FF6F6F;
 }
 
 
