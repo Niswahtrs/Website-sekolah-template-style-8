@@ -59,25 +59,7 @@ button a:hover{
     bottom: 0;
   }
   
-  
-  .info-kontak {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    color: var(--primaryColor);
-  }
-  
-  
-  .title-text {
-      color: var(--primaryColor);
-  }
-
-  .kumpulan-kegiatan a {
+.kumpulan-kegiatan a {
     text-decoration: none;
     color: var(--primaryColor);
 }
@@ -365,11 +347,9 @@ button a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.title-text h1 {
     color: var(--primaryColor);
 }
+
 .card-kegiatan {
     border-radius: 100%;
 }
@@ -445,11 +425,16 @@ button a:hover{
 }
 
 .info-kontak {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
     text-align: center;
-    padding: 50px;
-    z-index: 2;
-}
+    color: var(--primaryColor);
+  }
 
 .bg img{
     width: 100%;
@@ -483,8 +468,9 @@ button a:hover{
     color: #404040;
 }
 
-.infor p {
+.infor p a{
     color: var(--thirdColor);
+    text-decoration: none;
 }
 
 .card-infor .card {
@@ -716,13 +702,20 @@ video {
 
 #halaman .row {
     align-items: center;
-    
 }
 
-.pagination li {
-    border: none;
-    text-align: center;
+.col-6 h5 {
+    font-size: 15px;
+}
+
+.pagination p {
+    padding: 10px;
+    align-items: center;
     justify-content: center;
+}
+
+#halaman nav .Page {
+    text-decoration: none;
 }
 
 .page-item a{
